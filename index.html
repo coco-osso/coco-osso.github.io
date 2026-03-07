@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deportes Victoria</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#6a00f4,#ff4ecd);
+min-height:100vh;
+color:white;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(0,0,0,0.25);
+backdrop-filter:blur(10px);
+}
+
+header h1{
+font-size:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffd700;
+}
+
+/* CARRUSEL */
+
+.carousel{
+width:90%;
+max-width:1100px;
+margin:40px auto;
+position:relative;
+overflow:hidden;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.slides{
+display:flex;
+transition:transform .5s ease;
+}
+
+.slides img{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+/* BOTONES */
+
+.btn{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+background:rgba(0,0,0,0.5);
+color:white;
+border:none;
+font-size:25px;
+padding:10px 15px;
+cursor:pointer;
+}
+
+.btn:hover{
+background:black;
+}
+
+.prev{
+left:10px;
+}
+
+.next{
+right:10px;
+}
+
+/* TITULO */
+
+.titulo{
+text-align:center;
+margin:30px 0;
+font-size:35px;
+}
+
+/* PRODUCTOS */
+
+.productos{
+width:90%;
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+padding-bottom:60px;
+}
+
+.card{
+background:rgba(255,255,255,0.15);
+border-radius:15px;
+overflow:hidden;
+backdrop-filter:blur(8px);
+transition:.3s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-8px) scale(1.03);
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card h3{
+padding:10px;
+font-size:18px;
+}
+
+.precio{
+padding-bottom:15px;
+font-weight:bold;
+color:#ffd700;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:rgba(0,0,0,0.25);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>⚽ Deportes Victoria</h1>
+
+<nav>
+<a href="index.html">Inicio</a>
+<a href="contacto.html">Contacto</a>
+</nav>
+
+</header>
+
+<!-- CARRUSEL -->
+
+<section class="carousel">
+
+<div class="slides" id="slides">
+
+<img src="https://site-product.innovasport.com/img-test/2JD8028/2JD8028_1-1200x1200.jpg">
+<img src="https://elektra.vtexassets.com/arquivos/ids/9161004/image-bed93e0f58684a9e83aebcf08b1b5979.jpg?v=638682838867330000">
+<img src="https://m.media-amazon.com/images/I/61DKQ1nqhKL._AC_SL1500_.jpg">
+<img src="https://ss205.liverpool.com.mx/xl/1168389443.jpg">
+<img src="https://ss205.liverpool.com.mx/xl/1185382817.jpg">
+<img src="https://product-media.cdn.t1.com/product-channel/10338/2025/12/2/80007dcf36a6f84c8cf8007be2461793.jpg">
+<img src="https://site-product.innovasport.com/img-test/WZ2016901XB7/WZ2016901XB7_1-1200x1200.jpg">
+<img src="https://site-product.innovasport.com/img-test/2JD8028/2JD8028_1-1200x1200.jpg">
+<img src="https://elektra.vtexassets.com/arquivos/ids/9161004/image-bed93e0f58684a9e83aebcf08b1b5979.jpg?v=638682838867330000">
+<img src="https://m.media-amazon.com/images/I/61DKQ1nqhKL._AC_SL1500_.jpg">
+<img src="https://ss205.liverpool.com.mx/xl/1168389443.jpg">
+<img src="https://ss205.liverpool.com.mx/xl/1185382817.jpg">
+<img src="https://product-media.cdn.t1.com/product-channel/10338/2025/12/2/80007dcf36a6f84c8cf8007be2461793.jpg">
+<img src="https://site-product.innovasport.com/img-test/WZ2016901XB7/WZ2016901XB7_1-1200x1200.jpg">
+<img src="https://site-product.innovasport.com/img-test/2JD8028/2JD8028_1-1200x1200.jpg">
+<img src="https://elektra.vtexassets.com/arquivos/ids/9161004/image-bed93e0f58684a9e83aebcf08b1b5979.jpg?v=638682838867330000">
+<img src="https://m.media-amazon.com/images/I/61DKQ1nqhKL._AC_SL1500_.jpg">
+<img src="https://ss205.liverpool.com.mx/xl/1168389443.jpg">
+<img src="https://ss205.liverpool.com.mx/xl/1185382817.jpg">
+<img src="https://product-media.cdn.t1.com/product-channel/10338/2025/12/2/80007dcf36a6f84c8cf8007be2461793.jpg">
+<img src="https://site-product.innovasport.com/img-test/WZ2016901XB7/WZ2016901XB7_1-1200x1200.jpg">
+<img src="https://site-product.innovasport.com/img-test/2JD8028/2JD8028_1-1200x1200.jpg">
+<img src="https://elektra.vtexassets.com/arquivos/ids/9161004/image-bed93e0f58684a9e83aebcf08b1b5979.jpg?v=638682838867330000">
+<img src="https://m.media-amazon.com/images/I/61DKQ1nqhKL._AC_SL1500_.jpg">
+<img src="https://ss205.liverpool.com.mx/xl/1168389443.jpg">
+<img src="https://ss205.liverpool.com.mx/xl/1185382817.jpg">
+<img src="https://product-media.cdn.t1.com/product-channel/10338/2025/12/2/80007dcf36a6f84c8cf8007be2461793.jpg">
+<img src="https://site-product.innovasport.com/img-test/WZ2016901XB7/WZ2016901XB7_1-1200x1200.jpg">
+<img src="https://site-product.innovasport.com/img-test/2JD8028/2JD8028_1-1200x1200.jpg">
+<img src="https://elektra.vtexassets.com/arquivos/ids/9161004/image-bed93e0f58684a9e83aebcf08b1b5979.jpg?v=638682838867330000">
+<img src="https://m.media-amazon.com/images/I/61DKQ1nqhKL._AC_SL1500_.jpg">
+<img src="https://ss205.liverpool.com.mx/xl/1168389443.jpg">
+<img src="https://ss205.liverpool.com.mx/xl/1185382817.jpg">
+<img src="https://product-media.cdn.t1.com/product-channel/10338/2025/12/2/80007dcf36a6f84c8cf8007be2461793.jpg">
+<img src="https://site-product.innovasport.com/img-test/WZ2016901XB7/WZ2016901XB7_1-1200x1200.jpg">
+<img src="https://site-product.innovasport.com/img-test/2JD8028/2JD8028_1-1200x1200.jpg">
+<img src="https://elektra.vtexassets.com/arquivos/ids/9161004/image-bed93e0f58684a9e83aebcf08b1b5979.jpg?v=638682838867330000">
+<img src="https://m.media-amazon.com/images/I/61DKQ1nqhKL._AC_SL1500_.jpg">
+<img src="https://ss205.liverpool.com.mx/xl/1168389443.jpg">
+<img src="https://ss205.liverpool.com.mx/xl/1185382817.jpg">
+<img src="https://product-media.cdn.t1.com/product-channel/10338/2025/12/2/80007dcf36a6f84c8cf8007be2461793.jpg">
+<img src="https://site-product.innovasport.com/img-test/WZ2016901XB7/WZ2016901XB7_1-1200x1200.jpg">
+<img src="https://site-product.innovasport.com/img-test/2JD8028/2JD8028_1-1200x1200.jpg">
+<img src="https://elektra.vtexassets.com/arquivos/ids/9161004/image-bed93e0f58684a9e83aebcf08b1b5979.jpg?v=638682838867330000">
+<img src="https://m.media-amazon.com/images/I/61DKQ1nqhKL._AC_SL1500_.jpg">
+<img src="https://ss205.liverpool.com.mx/xl/1168389443.jpg">
+<img src="https://ss205.liverpool.com.mx/xl/1185382817.jpg">
+<img src="https://product-media.cdn.t1.com/product-channel/10338/2025/12/2/80007dcf36a6f84c8cf8007be2461793.jpg">
+<img src="https://site-product.innovasport.com/img-test/WZ2016901XB7/WZ2016901XB7_1-1200x1200.jpg">
+<img src="https://site-product.innovasport.com/img-test/2JD8028/2JD8028_1-1200x1200.jpg">
+<img src="https://elektra.vtexassets.com/arquivos/ids/9161004/image-bed93e0f58684a9e83aebcf08b1b5979.jpg?v=638682838867330000">
+<img src="https://m.media-amazon.com/images/I/61DKQ1nqhKL._AC_SL1500_.jpg">
+<img src="https://ss205.liverpool.com.mx/xl/1168389443.jpg">
+<img src="https://ss205.liverpool.com.mx/xl/1185382817.jpg">
+<img src="https://product-media.cdn.t1.com/product-channel/10338/2025/12/2/80007dcf36a6f84c8cf8007be2461793.jpg">
+<img src="https://site-product.innovasport.com/img-test/WZ2016901XB7/WZ2016901XB7_1-1200x1200.jpg">
+</div>
+
+<button class="btn prev" onclick="prevSlide()">❮</button>
+<button class="btn next" onclick="nextSlide()">❯</button>
+
+</section>
+
+<h2 class="titulo">Productos Deportivos</h2>
+
+<!-- PRODUCTOS -->
+
+<section class="productos">
+
+<div class="card">
+<img src="https://papeleriadelahorro.mx/cdn/shop/files/9899576.jpg?v=1751741719">
+<h3>Balón Profesional</h3>
+<p class="precio">$650</p>
+</div>
+
+<div class="card">
+<img src="https://www.orangesport.com.mx/cdn/shop/products/S83247-3.jpg?v=1680379413">
+<h3>Zapatos de Fútbol</h3>
+<p class="precio">$1200</p>
+</div>
+
+<div class="card">
+<img src="https://voleigram.com/wp-content/uploads/2021/01/balon-entrenamiento-voleibol-mikasa-v300w-at-tr-1.jpg">
+<h3>Balón de Entrenamiento</h3>
+<p class="precio">$500</p>
+</div>
+
+<div class="card">
+<img src="https://republicablanca.com/cdn/shop/files/796003_1_ba79c7b6-89da-444b-8f42-671bcfa052ff.jpg?v=1724965317">
+<h3>Tenis Running</h3>
+<p class="precio">$1100</p>
+</div>
+
+<div class="card">
+<img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/4307361.jpg">
+<h3>Guantes de Box</h3>
+<p class="precio">$850</p>
+</div>
+
+<div class="card">
+<img src="https://evolutionfitness.co/wp-content/uploads/2022/08/Mancuernas-evo_todas.jpg">
+<h3>Mancuernas</h3>
+<p class="precio">$1150</p>
+</div>
+
+<div class="card">
+<img src="https://ss201.liverpool.com.mx/xl/1038304310.jpg">
+<h3>Raqueta de Tenis</h3>
+<p class="precio">$1300</p>
+</div>
+
+<div class="card">
+<img src="https://www.mueblesamerica.mx/img/1024/1024/resize/A/D/ADID02592_x1_1.jpg">
+<h3>Mochila Deportiva</h3>
+<p class="precio">$720</p>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Deportes Victoria</p>
+</footer>
+
+<script>
+
+let index=0
+const slides=document.getElementById("slides")
+const total=slides.children.length
+
+function showSlide(){
+slides.style.transform=`translateX(-${index*100}%)`
+}
+
+function nextSlide(){
+index=(index+1)%total
+showSlide()
+}
+
+function prevSlide(){
+index=(index-1+total)%total
+showSlide()
+}
+
+setInterval(nextSlide,5000)
+
+</script>
+
+</body>
+</html>

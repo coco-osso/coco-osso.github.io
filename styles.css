@@ -1,0 +1,202 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* FONDO GENERAL */
+
+body{
+background:linear-gradient(135deg,#6a00f4,#ff4ecd);
+min-height:100vh;
+color:white;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(0,0,0,0.25);
+backdrop-filter:blur(10px);
+}
+
+header h1{
+font-size:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffd700;
+}
+
+/* CARRUSEL */
+
+.carousel{
+width:90%;
+max-width:1100px;
+margin:40px auto;
+position:relative;
+overflow:hidden;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.slides{
+display:flex;
+transition:transform .5s ease;
+}
+
+.slides img{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+/* BOTONES CARRUSEL */
+
+.btn{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+background:rgba(0,0,0,0.5);
+color:white;
+border:none;
+font-size:25px;
+padding:10px 15px;
+cursor:pointer;
+}
+
+.btn:hover{
+background:black;
+}
+
+.prev{
+left:10px;
+}
+
+.next{
+right:10px;
+}
+
+/* TITULO */
+
+.titulo{
+text-align:center;
+margin:30px 0;
+font-size:35px;
+}
+
+/* PRODUCTOS */
+
+.productos{
+width:90%;
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+padding-bottom:60px;
+}
+
+.card{
+background:rgba(255,255,255,0.15);
+border-radius:15px;
+overflow:hidden;
+backdrop-filter:blur(8px);
+transition:.3s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-8px) scale(1.03);
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card h3{
+padding:10px;
+font-size:18px;
+}
+
+.precio{
+padding-bottom:15px;
+font-weight:bold;
+color:#ffd700;
+}
+
+/* CONTACTO */
+
+.contacto{
+display:flex;
+justify-content:center;
+align-items:center;
+height:70vh;
+}
+
+.card-contacto{
+background:rgba(255,255,255,0.15);
+padding:40px;
+border-radius:20px;
+text-align:center;
+backdrop-filter:blur(10px);
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+max-width:500px;
+width:90%;
+}
+
+.card-contacto h2{
+font-size:35px;
+margin-bottom:15px;
+}
+
+.card-contacto p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.whatsapp{
+font-size:26px;
+font-weight:bold;
+color:#00ff88;
+}
+
+.boton{
+display:inline-block;
+margin-top:25px;
+padding:12px 25px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+transition:.3s;
+}
+
+.boton:hover{
+background:#1ebc59;
+transform:scale(1.05);
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:rgba(0,0,0,0.25);
+}
