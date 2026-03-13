@@ -1,328 +1,189 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Deportes Victoria</title>
 
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Inicio (Morado - LATAM) - Deportes Victoria</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#8A2BE2",
+                        "background-light": "#f8f5f5",
+                        "background-dark": "#12081a",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
-
-body{
-background:linear-gradient(135deg,#6a00f4,#ff4ecd);
-min-height:100vh;
-color:white;
-}
-
-/* HEADER */
-
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 60px;
-background:rgba(0,0,0,0.25);
-backdrop-filter:blur(10px);
-}
-
-header h1{
-font-size:30px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-font-weight:bold;
-transition:.3s;
-}
-
-nav a:hover{
-color:#ffd700;
-}
-
-/* CARRUSEL */
-
-.carousel{
-width:90%;
-max-width:1100px;
-margin:40px auto;
-position:relative;
-overflow:hidden;
-border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.4);
-}
-
-.slides{
-display:flex;
-transition:transform .5s ease;
-}
-
-.slides img{
-width:100%;
-height:350px;
-object-fit:cover;
-}
-
-/* BOTONES */
-
-.btn{
-position:absolute;
-top:50%;
-transform:translateY(-50%);
-background:rgba(0,0,0,0.5);
-color:white;
-border:none;
-font-size:25px;
-padding:10px 15px;
-cursor:pointer;
-}
-
-.btn:hover{
-background:black;
-}
-
-.prev{
-left:10px;
-}
-
-.next{
-right:10px;
-}
-
-/* TITULO */
-
-.titulo{
-text-align:center;
-margin:30px 0;
-font-size:35px;
-}
-
-/* PRODUCTOS */
-
-.productos{
-width:90%;
-max-width:1200px;
-margin:auto;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-padding-bottom:60px;
-}
-
-.card{
-background:rgba(255,255,255,0.15);
-border-radius:15px;
-overflow:hidden;
-backdrop-filter:blur(8px);
-transition:.3s;
-text-align:center;
-}
-
-.card:hover{
-transform:translateY(-8px) scale(1.03);
-box-shadow:0 10px 25px rgba(0,0,0,0.4);
-}
-
-.card img{
-width:100%;
-height:200px;
-object-fit:cover;
-}
-
-.card h3{
-padding:10px;
-font-size:18px;
-}
-
-.precio{
-padding-bottom:15px;
-font-weight:bold;
-color:#ffd700;
-}
-
-/* FOOTER */
-
-footer{
-text-align:center;
-padding:20px;
-background:rgba(0,0,0,0.25);
-}
-
-</style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
 </head>
-
-<body>
-
-<header>
-
-<h1>⚽ Deportes Victoria</h1>
-
-<nav>
-<a href="index.html">Inicio</a>
-<a href="contacto.html">Contacto</a>
-</nav>
-
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Header / Top Bar -->
+<header class="sticky top-0 z-50 flex items-center bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-4 py-3 justify-between border-b border-slate-200 dark:border-primary/20">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100 cursor-pointer" style="">menu</span>
+<h2 class="text-xl font-extrabold tracking-tight text-primary uppercase" style="">Victoria</h2>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center h-10 w-10 rounded-full hover:bg-primary/10 transition-colors" style="">
+<span class="material-symbols-outlined" style="">search</span>
+</button>
+<button class="relative flex items-center justify-center h-10 w-10 rounded-full hover:bg-primary/10 transition-colors" style="">
+<span class="material-symbols-outlined" style="">shopping_cart</span>
+<span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[10px] font-bold text-white" style="">3</span>
+</button>
+</div>
 </header>
-
-<!-- CARRUSEL -->
-
-<section class="carousel">
-
-<div class="slides" id="slides">
-
-<img src="https://site-product.innovasport.com/img-test/2JD8028/2JD8028_1-1200x1200.jpg">
-<img src="https://elektra.vtexassets.com/arquivos/ids/9161004/image-bed93e0f58684a9e83aebcf08b1b5979.jpg?v=638682838867330000">
-<img src="https://m.media-amazon.com/images/I/61DKQ1nqhKL._AC_SL1500_.jpg">
-<img src="https://ss205.liverpool.com.mx/xl/1168389443.jpg">
-<img src="https://ss205.liverpool.com.mx/xl/1185382817.jpg">
-<img src="https://product-media.cdn.t1.com/product-channel/10338/2025/12/2/80007dcf36a6f84c8cf8007be2461793.jpg">
-<img src="https://site-product.innovasport.com/img-test/WZ2016901XB7/WZ2016901XB7_1-1200x1200.jpg">
-<img src="https://site-product.innovasport.com/img-test/2JD8028/2JD8028_1-1200x1200.jpg">
-<img src="https://elektra.vtexassets.com/arquivos/ids/9161004/image-bed93e0f58684a9e83aebcf08b1b5979.jpg?v=638682838867330000">
-<img src="https://m.media-amazon.com/images/I/61DKQ1nqhKL._AC_SL1500_.jpg">
-<img src="https://ss205.liverpool.com.mx/xl/1168389443.jpg">
-<img src="https://ss205.liverpool.com.mx/xl/1185382817.jpg">
-<img src="https://product-media.cdn.t1.com/product-channel/10338/2025/12/2/80007dcf36a6f84c8cf8007be2461793.jpg">
-<img src="https://site-product.innovasport.com/img-test/WZ2016901XB7/WZ2016901XB7_1-1200x1200.jpg">
-<img src="https://site-product.innovasport.com/img-test/2JD8028/2JD8028_1-1200x1200.jpg">
-<img src="https://elektra.vtexassets.com/arquivos/ids/9161004/image-bed93e0f58684a9e83aebcf08b1b5979.jpg?v=638682838867330000">
-<img src="https://m.media-amazon.com/images/I/61DKQ1nqhKL._AC_SL1500_.jpg">
-<img src="https://ss205.liverpool.com.mx/xl/1168389443.jpg">
-<img src="https://ss205.liverpool.com.mx/xl/1185382817.jpg">
-<img src="https://product-media.cdn.t1.com/product-channel/10338/2025/12/2/80007dcf36a6f84c8cf8007be2461793.jpg">
-<img src="https://site-product.innovasport.com/img-test/WZ2016901XB7/WZ2016901XB7_1-1200x1200.jpg">
-<img src="https://site-product.innovasport.com/img-test/2JD8028/2JD8028_1-1200x1200.jpg">
-<img src="https://elektra.vtexassets.com/arquivos/ids/9161004/image-bed93e0f58684a9e83aebcf08b1b5979.jpg?v=638682838867330000">
-<img src="https://m.media-amazon.com/images/I/61DKQ1nqhKL._AC_SL1500_.jpg">
-<img src="https://ss205.liverpool.com.mx/xl/1168389443.jpg">
-<img src="https://ss205.liverpool.com.mx/xl/1185382817.jpg">
-<img src="https://product-media.cdn.t1.com/product-channel/10338/2025/12/2/80007dcf36a6f84c8cf8007be2461793.jpg">
-<img src="https://site-product.innovasport.com/img-test/WZ2016901XB7/WZ2016901XB7_1-1200x1200.jpg">
-<img src="https://site-product.innovasport.com/img-test/2JD8028/2JD8028_1-1200x1200.jpg">
-<img src="https://elektra.vtexassets.com/arquivos/ids/9161004/image-bed93e0f58684a9e83aebcf08b1b5979.jpg?v=638682838867330000">
-<img src="https://m.media-amazon.com/images/I/61DKQ1nqhKL._AC_SL1500_.jpg">
-<img src="https://ss205.liverpool.com.mx/xl/1168389443.jpg">
-<img src="https://ss205.liverpool.com.mx/xl/1185382817.jpg">
-<img src="https://product-media.cdn.t1.com/product-channel/10338/2025/12/2/80007dcf36a6f84c8cf8007be2461793.jpg">
-<img src="https://site-product.innovasport.com/img-test/WZ2016901XB7/WZ2016901XB7_1-1200x1200.jpg">
-<img src="https://site-product.innovasport.com/img-test/2JD8028/2JD8028_1-1200x1200.jpg">
-<img src="https://elektra.vtexassets.com/arquivos/ids/9161004/image-bed93e0f58684a9e83aebcf08b1b5979.jpg?v=638682838867330000">
-<img src="https://m.media-amazon.com/images/I/61DKQ1nqhKL._AC_SL1500_.jpg">
-<img src="https://ss205.liverpool.com.mx/xl/1168389443.jpg">
-<img src="https://ss205.liverpool.com.mx/xl/1185382817.jpg">
-<img src="https://product-media.cdn.t1.com/product-channel/10338/2025/12/2/80007dcf36a6f84c8cf8007be2461793.jpg">
-<img src="https://site-product.innovasport.com/img-test/WZ2016901XB7/WZ2016901XB7_1-1200x1200.jpg">
-<img src="https://site-product.innovasport.com/img-test/2JD8028/2JD8028_1-1200x1200.jpg">
-<img src="https://elektra.vtexassets.com/arquivos/ids/9161004/image-bed93e0f58684a9e83aebcf08b1b5979.jpg?v=638682838867330000">
-<img src="https://m.media-amazon.com/images/I/61DKQ1nqhKL._AC_SL1500_.jpg">
-<img src="https://ss205.liverpool.com.mx/xl/1168389443.jpg">
-<img src="https://ss205.liverpool.com.mx/xl/1185382817.jpg">
-<img src="https://product-media.cdn.t1.com/product-channel/10338/2025/12/2/80007dcf36a6f84c8cf8007be2461793.jpg">
-<img src="https://site-product.innovasport.com/img-test/WZ2016901XB7/WZ2016901XB7_1-1200x1200.jpg">
-<img src="https://site-product.innovasport.com/img-test/2JD8028/2JD8028_1-1200x1200.jpg">
-<img src="https://elektra.vtexassets.com/arquivos/ids/9161004/image-bed93e0f58684a9e83aebcf08b1b5979.jpg?v=638682838867330000">
-<img src="https://m.media-amazon.com/images/I/61DKQ1nqhKL._AC_SL1500_.jpg">
-<img src="https://ss205.liverpool.com.mx/xl/1168389443.jpg">
-<img src="https://ss205.liverpool.com.mx/xl/1185382817.jpg">
-<img src="https://product-media.cdn.t1.com/product-channel/10338/2025/12/2/80007dcf36a6f84c8cf8007be2461793.jpg">
-<img src="https://site-product.innovasport.com/img-test/WZ2016901XB7/WZ2016901XB7_1-1200x1200.jpg">
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="@container">
+<div class="">
+<div class="relative flex flex-col bg-cover bg-center bg-no-repeat @[480px]:rounded-xl items-center justify-center overflow-hidden min-h-[340px] gap-4 p-4" data-alt="Professional athlete running on a track at sunset" style='background-image: linear-gradient(rgba(18, 8, 26, 0.6), rgba(18, 8, 26, 0.9)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC26r38HKVdopLCwTNObrZcaix8dV2UIq6GN0lZlzn-911NR2r0YvA3AOf7OlsAWixNxINf0kVMQrX_xkFkAQcnIbLvnn81J9c1kRK-OvczPns_0NqsMY8aZwzcc-v0TIOtQIKBzwk3Hamj479QyPQIyvZrilgchT-qOAmDHgrAcryiAcK8BDYM9ly4Obz7XVi_H8IqEL_u4ot6JI21sKe-s9rloKHHa2YVIfR-nqIxs8qTanUwaZBf4tQ5YxO__6fdDDzVm4iYFkzw");'>
+<div class="flex flex-col text-center z-10">
+<span class="text-primary font-bold tracking-[0.2em] text-xs uppercase" style="">Deportes victoria</span>
+<h1 class="text-white text-4xl font-black leading-tight tracking-tight @[480px]:text-6xl uppercase" style="">ELEVA TU <span class="text-primary" style="">JUEGO</span></h1>
+<p class="text-slate-200 text-sm font-light leading-relaxed max-w-md mx-auto @[480px]:text-base" style="">Descubre nuestra última colección de fútbol, básquetbol y running de alto rendimiento.</p>
 </div>
-
-<button class="btn prev" onclick="prevSlide()">❮</button>
-<button class="btn next" onclick="nextSlide()">❯</button>
-
+<div class="flex flex-wrap justify-center gap-3 z-10">
+<a class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary text-white text-sm font-bold uppercase tracking-wider hover:bg-red-700 transition-colors shadow-lg shadow-primary/20" href="contacto.html" style="">Contáctanos</a>
+</div>
+</div>
+</div>
 </section>
-
-<h2 class="titulo">Productos Deportivos</h2>
-
-<!-- PRODUCTOS -->
-
-<section class="productos">
-
-<div class="card">
-<img src="https://papeleriadelahorro.mx/cdn/shop/files/9899576.jpg?v=1751741719">
-<h3>Balón Profesional</h3>
-<p class="precio">$650</p>
+<!-- Category Quick Links -->
+<section class="flex gap-4 overflow-x-auto px-4 no-scrollbar pt-2 pb-6">
+<div class="flex flex-col items-center gap-2 shrink-0">
+<div class="h-16 w-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl" style="">sports_soccer</span>
 </div>
-
-<div class="card">
-<img src="https://www.orangesport.com.mx/cdn/shop/products/S83247-3.jpg?v=1680379413">
-<h3>Zapatos de Fútbol</h3>
-<p class="precio">$1200</p>
+<span class="text-xs font-semibold" style="">Fútbol</span>
 </div>
-
-<div class="card">
-<img src="https://voleigram.com/wp-content/uploads/2021/01/balon-entrenamiento-voleibol-mikasa-v300w-at-tr-1.jpg">
-<h3>Balón de Entrenamiento</h3>
-<p class="precio">$500</p>
+<div class="flex flex-col items-center gap-2 shrink-0">
+<div class="h-16 w-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl" style="">directions_run</span>
 </div>
-
-<div class="card">
-<img src="https://republicablanca.com/cdn/shop/files/796003_1_ba79c7b6-89da-444b-8f42-671bcfa052ff.jpg?v=1724965317">
-<h3>Tenis Running</h3>
-<p class="precio">$1100</p>
+<span class="text-xs font-semibold" style="">Running</span>
 </div>
-
-<div class="card">
-<img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/4307361.jpg">
-<h3>Guantes de Box</h3>
-<p class="precio">$850</p>
+<div class="flex flex-col items-center gap-2 shrink-0">
+<div class="h-16 w-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl" style="">fitness_center</span>
 </div>
-
-<div class="card">
-<img src="https://evolutionfitness.co/wp-content/uploads/2022/08/Mancuernas-evo_todas.jpg">
-<h3>Mancuernas</h3>
-<p class="precio">$1150</p>
+<span class="text-xs font-semibold" style="">Entrenamiento</span>
 </div>
-
-<div class="card">
-<img src="https://ss201.liverpool.com.mx/xl/1038304310.jpg">
-<h3>Raqueta de Tenis</h3>
-<p class="precio">$1300</p>
+<div class="flex flex-col items-center gap-2 shrink-0">
+<div class="h-16 w-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl" style="">sports_basketball</span>
 </div>
-
-<div class="card">
-<img src="https://www.mueblesamerica.mx/img/1024/1024/resize/A/D/ADID02592_x1_1.jpg">
-<h3>Mochila Deportiva</h3>
-<p class="precio">$720</p>
+<span class="text-xs font-semibold" style="">Básquetbol</span>
 </div>
-
+<div class="flex flex-col items-center gap-2 shrink-0">
+<div class="h-16 w-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl" style="">hiking</span>
+</div>
+<span class="text-xs font-semibold" style="">Aire libre</span>
+</div>
 </section>
-
-<footer>
-<p>© 2026 Deportes Victoria</p>
-</footer>
-
-<script>
-
-let index=0
-const slides=document.getElementById("slides")
-const total=slides.children.length
-
-function showSlide(){
-slides.style.transform=`translateX(-${index*100}%)`
-}
-
-function nextSlide(){
-index=(index+1)%total
-showSlide()
-}
-
-function prevSlide(){
-index=(index-1+total)%total
-showSlide()
-}
-
-setInterval(nextSlide,5000)
-
-</script>
-
-</body>
-</html>
+<!-- Featured Products -->
+<section class="px-4 py-4">
+<div class="flex items-end justify-between mb-6">
+<div>
+<h2 class="text-2xl font-black tracking-tight uppercase" style="">EQUIPO <span class="text-primary" style="">DESTACADO</span></h2>
+<p class="text-slate-500 dark:text-slate-400 text-xs" style="">Curado para la excelencia</p>
+</div>
+<a class="text-primary text-sm font-bold flex items-center gap-1 uppercase tracking-tighter" href="#" style="">VER TODO <span class="material-symbols-outlined text-sm" style="">arrow_forward</span></a>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<!-- Product Card 1 -->
+<div class="flex flex-col gap-3 group">
+<div class="relative w-full aspect-[4/5] bg-slate-100 dark:bg-primary/5 rounded-xl overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Red high-performance running shoes on dark background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBp1yK3dZEa0xsilXh3xRPejUb0_KuIeCASdHHorJj8Qt_Xg10JvLAY8rMgHiHNppjYdfxSVuvHZKO2WoWJNbWJBXCytjuGkjrkhzPS1QzINF4egueDqtWCxkOePA1gQ8E44jT20qxhyMAELKPKHyS1aVFd5-cnfb7eVSgg_RzjhkgT-Cvo244QByc-DI5TS9z2642YTTJFQHS1doQFrtw8J-s18i6aBK9xU9NI9TS0sHMxZg1PS5QZl4Ir9NEpXW_8-i_uLGWN_nWW");'></div>
+<span class="absolute top-2 left-2 bg-primary text-white text-[10px] font-black px-2 py-1 rounded uppercase" style="">POPULAR</span>
+<button class="absolute bottom-2 right-2 h-9 w-9 bg-white dark:bg-background-dark text-slate-900 dark:text-slate-100 rounded-full flex items-center justify-center shadow-md" style="">
+<span class="material-symbols-outlined text-xl" style="">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-slate-900 dark:text-slate-100 text-sm font-bold leading-tight" style="">Ultra-Light Runner Elite</p>
+<p class="text-primary text-lg font-black" style="">$120.00</p>
+<button class="mt-1 w-full py-2 bg-slate-900 dark:bg-slate-100 text-white dark:text-background-dark text-[11px] font-black uppercase rounded tracking-widest hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-colors" style="">COMPRAR</button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="flex flex-col gap-3 group">
+<div class="relative w-full aspect-[4/5] bg-slate-100 dark:bg-primary/5 rounded-xl overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Modern sports jersey with sleek design" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAqmNPbMQ8cVi94gypXJIeNh5bYOW04_PqfcsKHYPkHwjXxu08yfcK67dfMJr-3IvPIBxu-bFsY5Z27PLV1uInquM2baX0L7iMg3GM8hXip8DnfEic6qiqO9fZZWXG87W9JxhVuuW6th77wd75NaxfKmiFnCj_c1xhzf96ihsH3Wr4ZcpAVg_daML7Q990SQzrhuu6mlcBBj6HTyWRAmkSQq4qohWfNUgVRfw5lgGN9pQhL8Sf-KwNYeSxCUhNZVHkg7qBP84wmHc9j");'></div>
+<button class="absolute bottom-2 right-2 h-9 w-9 bg-white dark:bg-background-dark text-slate-900 dark:text-slate-100 rounded-full flex items-center justify-center shadow-md" style="">
+<span class="material-symbols-outlined text-xl" style="">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-slate-900 dark:text-slate-100 text-sm font-bold leading-tight" style="">Official V-Strike Jersey</p>
+<p class="text-primary text-lg font-black" style="">$85.00</p>
+<button class="mt-1 w-full py-2 bg-slate-900 dark:bg-slate-100 text-white dark:text-background-dark text-[11px] font-black uppercase rounded tracking-widest hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-colors" style="">COMPRAR</button>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="flex flex-col gap-3 group">
+<div class="relative w-full aspect-[4/5] bg-slate-100 dark:bg-primary/5 rounded-xl overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Professional grade gym dumbbells and weights" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDREFBbTg0j6OPrslLcVPx2hBfxGEWB2bXv4rHG-HdRy6uk3H_SV5_isy_N4cksiqKFkz2yoQ8YGT3hl6SQ7rR8nwiFXzC3C1g2-CwGeY18hwKYWAu3s-UD2NK-wehk5Cb0LLNNEeEW4aFfwFFGLwoezqCtzRNJV-JT_IZkZU6VYppCGJnbZD_cxg1q1jmbV5ZpKwwthfJIuWwrHSKOReUCrgqWw-OgyakZkGrq1JpWOryHn4g_1yjmfC6fnjqipB0INim8oLgZIy_w");'></div>
+<span class="absolute top-2 left-2 bg-slate-900 text-white text-[10px] font-black px-2 py-1 rounded uppercase" style="">NUEVO</span>
+<button class="absolute bottom-2 right-2 h-9 w-9 bg-white dark:bg-background-dark text-slate-900 dark:text-slate-100 rounded-full flex items-center justify-center shadow-md" style="">
+<span class="material-symbols-outlined text-xl" style="">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-slate-900 dark:text-slate-100 text-sm font-bold leading-tight" style="">Precision Grip Weights</p>
+<p class="text-primary text-lg font-black" style="">$45.00</p>
+<button class="mt-1 w-full py-2 bg-slate-900 dark:bg-slate-100 text-white dark:text-background-dark text-[11px] font-black uppercase rounded tracking-widest hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-colors" style="">COMPRAR</button>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="flex flex-col gap-3 group">
+<div class="relative w-full aspect-[4/5] bg-slate-100 dark:bg-primary/5 rounded-xl overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Breathable mesh athletic shorts" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDY-tpTP-oHYL66X7xMYmazbZ-Z_-_V7cMUMkGgNnTyI2pP2OwCsDe4J09u8_390PF14tzucCIxWWxds6lBtIRjsv5czyOUISSx2hRjGlZe4kysAaaCcRkOB_buQONqLvJd1Klv2EvO_sBnEO1mmQAMUMHYOkBMtEHmK11oEkIOugX1f3PICVUWatDk8YWYS2Eo6oj-n78vBwEf4TmLa83wbff6TfZbmGgUy2pt-QyJoMIrge9HRt36ORvpE0p_FYak4-vZjPcdk8v5");'></div>
+<button class="absolute bottom-2 right-2 h-9 w-9 bg-white dark:bg-background-dark text-slate-900 dark:text-slate-100 rounded-full flex items-center justify-center shadow-md" style="">
+<span class="material-symbols-outlined text-xl" style="">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-slate-900 dark:text-slate-100 text-sm font-bold leading-tight" style="">Pro-Dry Training Shorts</p>
+<p class="text-primary text-lg font-black" style="">$30.00</p>
+<button class="mt-1 w-full py-2 bg-slate-900 dark:bg-slate-100 text-white dark:text-background-dark text-[11px] font-black uppercase rounded tracking-widest hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-colors" style="">COMPRAR</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Promo -->
+<section class="px-4 py-10 bg-primary/5 border-y border-primary/10 my-6" id="contacto">
+<div class="text-center flex flex-col gap-4">
+<h3 class="text-2xl font-black uppercase tracking-tighter" style="">Únete al Club <span class="text-primary" style="">Victoria</span></h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm px-4" style="">Obtén 15% de descuento en tu primer pedido y acceso exclusivo a lanzamientos limitados.</p>
+<div class="flex flex-col gap-2 mt-2">
+<input class="w-full bg-white dark:bg-background-dark border-slate-300 dark:border-primary/20 rounded-lg px-4 h-12 text-sm focus:ring-primary focus:border-primary" placeholder="Ingresa tu correo" type="email"/>
+<button class="w-full h-12 bg-primary text-white font-black uppercase tracking-widest rounded-lg" style="">SUSCRIBIRSE</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</body></html>

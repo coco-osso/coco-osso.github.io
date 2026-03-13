@@ -1,157 +1,127 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contacto | Deportes Victoria</title>
 
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#8A2BE2",
+                        "background-light": "#f8f5f5",
+                        "background-dark": "#221010",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
-
-body{
-background:linear-gradient(135deg,#6a00f4,#ff4ecd);
-min-height:100vh;
-color:white;
-}
-
-/* HEADER */
-
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 60px;
-background:rgba(0,0,0,0.25);
-backdrop-filter:blur(10px);
-}
-
-header h1{
-font-size:30px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-font-weight:bold;
-transition:.3s;
-}
-
-nav a:hover{
-color:#ffd700;
-}
-
-/* SECCION CONTACTO */
-
-.contacto{
-display:flex;
-justify-content:center;
-align-items:center;
-height:70vh;
-}
-
-.card-contacto{
-background:rgba(255,255,255,0.15);
-padding:40px;
-border-radius:20px;
-text-align:center;
-backdrop-filter:blur(10px);
-box-shadow:0 10px 25px rgba(0,0,0,0.4);
-max-width:500px;
-width:90%;
-}
-
-.card-contacto h2{
-font-size:35px;
-margin-bottom:15px;
-}
-
-.card-contacto p{
-font-size:20px;
-margin-bottom:20px;
-}
-
-.whatsapp{
-font-size:26px;
-font-weight:bold;
-color:#00ff88;
-}
-
-/* BOTON */
-
-.boton{
-display:inline-block;
-margin-top:25px;
-padding:12px 25px;
-background:#25D366;
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-transition:.3s;
-}
-
-.boton:hover{
-background:#1ebc59;
-transform:scale(1.05);
-}
-
-/* FOOTER */
-
-footer{
-text-align:center;
-padding:20px;
-background:rgba(0,0,0,0.25);
-position:absolute;
-bottom:0;
-width:100%;
-}
-
-</style>
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
 </head>
-
-<body>
-
-<header>
-
-<h1>⚽ Deportes Victoria</h1>
-
-<nav>
-<a href="index.html">Inicio</a>
-<a href="contacto.html">Contacto</a>
-</nav>
-
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col font-display">
+<header class="sticky top-0 z-50 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md border-b border-primary/10">
+<div class="flex items-center p-4 justify-between max-w-md mx-auto w-full">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-primary/10 cursor-pointer">
+<span class="material-symbols-outlined" style="">arrow_back</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-tight flex-1 text-center" style="">Deportes Victoria</h2>
+<div class="flex w-10 items-center justify-end">
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-primary/10 transition-colors" style="">
+<span class="material-symbols-outlined" style="">search</span>
+</button>
+</div>
+</div>
 </header>
-
-<section class="contacto">
-
-<div class="card-contacto">
-
-<h2>Contáctanos</h2>
-
-<p>Para pedidos o información:</p>
-
-<div class="whatsapp">
-WhatsApp: 777 139 3557
+<main class="flex-1 w-full max-w-md mx-auto pb-24">
+<div class="px-4 py-8">
+<h1 class="text-4xl font-extrabold tracking-tight mb-2" style="">Ponte en contacto</h1>
+<p class="text-slate-600 dark:text-slate-400 text-base leading-relaxed" style="">¿Tienes preguntas sobre nuestros productos? Nuestro equipo está listo para ayudarte a ganar.</p>
 </div>
-
-<a class="boton" href="https://wa.me/527771393557?text=Quiero%20Cotizar..." target="_blank">
-Enviar mensaje
-</a>
-
+<section class="px-4 mb-10">
+<div class="bg-primary/5 dark:bg-primary/10 rounded-xl p-6 border border-primary/20">
+<h3 class="text-xl font-bold mb-6 flex items-center gap-2" style=""><span class="material-symbols-outlined text-primary" style="">smartphone</span> Envíanos un mensaje</h3>
+<form class="space-y-4">
+<a class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/20 transition-all active:scale-[0.98] mt-2 flex items-center justify-center" href="https://wa.me/527771393557" style="">Enviar Mensaje</a>
+</form>
 </div>
-
 </section>
-
-<footer>
-© 2026 Deportes Victoria
-</footer>
-
-</body>
-</html>
+<section class="px-4 mb-10">
+<h3 class="text-xl font-bold mb-4 flex items-center gap-2" style=""><span class="material-symbols-outlined text-primary" style="">location_on</span> Visita nuestra tienda</h3>
+<div class="rounded-xl overflow-hidden h-52 relative border border-primary/10 mb-4">
+<img alt="Store location map" class="w-full h-full object-cover" data-alt="Modern minimalist city map with red pin" data-location="Madrid, Spain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZaWNmW2ej2R0wPBXq6oY9OxUokb2gSUmDCPtC5BSXvOrgwk_n1qE1XGXoei0re9COTtU1b0zWpSvfSUrE1OpQ4MIx8a3GjEP06dLsJ0SSvMrZCmK8j1aVZsbNkxTINNbO4M_a1BvSzePTc7hclO2sFl0f3-CYOcZ5vuHglGeqGD0SA_9piBiUoN39ZM2gTLXxxwYh3oAkYqM20DkFacsVbcZymHEGG_mXcnonLCAuXvtVsNQil_fk6-Enk1Zd5DABDMz_gSTG4zaX" style=""/>
+<div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+<div class="absolute bottom-4 left-4 right-4 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm p-3 rounded-lg flex items-center justify-between">
+<div>
+<p class="text-xs font-bold uppercase tracking-wider text-primary" style="">Sede Principal</p>
+<p class="text-sm" style="">Calle de la Victoria, 12, Madrid</p>
+</div>
+<a class="bg-primary text-white p-2 rounded-lg hover:scale-110 transition-transform" href="https://maps.app.goo.gl/rVNHgDUKZuuP1aG28" style="" target="_blank">
+<span class="material-symbols-outlined text-sm" style="">directions</span>
+</a>
+</div>
+</div><a class="flex items-center justify-center gap-2 w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 rounded-xl shadow-lg shadow-primary/20 transition-all active:scale-[0.98] mb-6" href="https://maps.app.goo.gl/rVNHgDUKZuuP1aG28" style="" target="_blank">
+<span class="material-symbols-outlined" style="">map</span>
+Cómo llegar en Google Maps
+</a>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-primary/5 dark:bg-primary/5 p-4 rounded-xl border border-primary/10">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-lg" style="">schedule</span>
+<h4 class="font-bold" style="">Horarios</h4>
+</div>
+<ul class="text-sm space-y-1 text-slate-600 dark:text-slate-400">
+<li class="flex justify-between" style=""><span class="" style="">Lun-Vie:</span> <span class="font-medium text-slate-900 dark:text-slate-100" style="">9am-8pm</span></li>
+<li class="flex justify-between" style=""><span class="" style="">Sáb:</span> <span class="font-medium text-slate-900 dark:text-slate-100" style="">10am-6pm</span></li>
+<li class="flex justify-between" style=""><span class="" style="">Dom:</span> <span class="font-medium text-slate-900 dark:text-slate-100" style="">Cerrado</span></li>
+</ul>
+</div>
+<div class="bg-primary/5 dark:bg-primary/5 p-4 rounded-xl border border-primary/10">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-lg" style="">call</span>
+<h4 class="font-bold" style="">Información</h4>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400" style="">¿Tienes preguntas?</p>
+<p class="text-sm text-slate-600 dark:text-slate-400 mt-1" style=""><br/></p>
+</div>
+</div>
+</section>
+<section class="px-4 mb-6">
+<h3 class="text-lg font-bold mb-4 text-center" style="">Sigue la acción</h3>
+<div class="flex justify-center gap-6">
+<a class="size-12 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#" style="">
+<span class="material-symbols-outlined" style="">public</span>
+</a>
+<a class="size-12 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#" style="">
+<span class="material-symbols-outlined" style="">camera</span>
+</a>
+<a class="size-12 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#" style="">
+<span class="material-symbols-outlined" style="">movie</span>
+</a>
+<a class="size-12 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#" style="">
+<span class="material-symbols-outlined" style="">share</span>
+</a>
+</div>
+</section>
+<div class="px-4 mb-10"><a class="flex items-center justify-center gap-2 w-full bg-slate-200 dark:bg-slate-800 hover:bg-primary hover:text-white text-slate-900 dark:text-slate-100 font-bold py-4 rounded-xl transition-all active:scale-[0.98]" href="index.html"><span class="material-symbols-outlined">home</span> Volver al inicio</a></div></main>
+</body></html>
