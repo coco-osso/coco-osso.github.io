@@ -1,189 +1,165 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Inicio (Morado - LATAM) - Deportes Victoria</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#8A2BE2",
-                        "background-light": "#f8f5f5",
-                        "background-dark": "#12081a",
-                    },
-                    fontFamily: {
-                        "display": ["Lexend", "sans-serif"]
-                    },
-                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-                },
-            },
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agua Purific - Ingeniería de Agua</title>
+    <!-- Tailwind CSS v3 CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f7f9fb; color: #191c1e; }
+        .font-headline { font-family: 'Manrope', sans-serif; }
+        .industrial-texture {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2300658d' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
-    </script>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
+        .glass-panel {
+            background: rgba(247, 249, 251, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
-<!-- Header / Top Bar -->
-<header class="sticky top-0 z-50 flex items-center bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-4 py-3 justify-between border-b border-slate-200 dark:border-primary/20">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-slate-900 dark:text-slate-100 cursor-pointer" style="">menu</span>
-<h2 class="text-xl font-extrabold tracking-tight text-primary uppercase" style="">Victoria</h2>
-</div>
-<div class="flex items-center gap-4">
-<button class="flex items-center justify-center h-10 w-10 rounded-full hover:bg-primary/10 transition-colors" style="">
-<span class="material-symbols-outlined" style="">search</span>
-</button>
-<button class="relative flex items-center justify-center h-10 w-10 rounded-full hover:bg-primary/10 transition-colors" style="">
-<span class="material-symbols-outlined" style="">shopping_cart</span>
-<span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[10px] font-bold text-white" style="">3</span>
-</button>
-</div>
-</header>
-<main class="flex-grow">
-<!-- Hero Section -->
-<section class="@container">
-<div class="">
-<div class="relative flex flex-col bg-cover bg-center bg-no-repeat @[480px]:rounded-xl items-center justify-center overflow-hidden min-h-[340px] gap-4 p-4" data-alt="Professional athlete running on a track at sunset" style='background-image: linear-gradient(rgba(18, 8, 26, 0.6), rgba(18, 8, 26, 0.9)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC26r38HKVdopLCwTNObrZcaix8dV2UIq6GN0lZlzn-911NR2r0YvA3AOf7OlsAWixNxINf0kVMQrX_xkFkAQcnIbLvnn81J9c1kRK-OvczPns_0NqsMY8aZwzcc-v0TIOtQIKBzwk3Hamj479QyPQIyvZrilgchT-qOAmDHgrAcryiAcK8BDYM9ly4Obz7XVi_H8IqEL_u4ot6JI21sKe-s9rloKHHa2YVIfR-nqIxs8qTanUwaZBf4tQ5YxO__6fdDDzVm4iYFkzw");'>
-<div class="flex flex-col text-center z-10">
-<span class="text-primary font-bold tracking-[0.2em] text-xs uppercase" style="">Deportes victoria</span>
-<h1 class="text-white text-4xl font-black leading-tight tracking-tight @[480px]:text-6xl uppercase" style="">ELEVA TU <span class="text-primary" style="">JUEGO</span></h1>
-<p class="text-slate-200 text-sm font-light leading-relaxed max-w-md mx-auto @[480px]:text-base" style="">Descubre nuestra última colección de fútbol, básquetbol y running de alto rendimiento.</p>
-</div>
-<div class="flex flex-wrap justify-center gap-3 z-10">
-<a class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary text-white text-sm font-bold uppercase tracking-wider hover:bg-red-700 transition-colors shadow-lg shadow-primary/20" href="contacto.html" style="">Contáctanos</a>
-</div>
-</div>
-</div>
-</section>
-<!-- Category Quick Links -->
-<section class="flex gap-4 overflow-x-auto px-4 no-scrollbar pt-2 pb-6">
-<div class="flex flex-col items-center gap-2 shrink-0">
-<div class="h-16 w-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-3xl" style="">sports_soccer</span>
-</div>
-<span class="text-xs font-semibold" style="">Fútbol</span>
-</div>
-<div class="flex flex-col items-center gap-2 shrink-0">
-<div class="h-16 w-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-3xl" style="">directions_run</span>
-</div>
-<span class="text-xs font-semibold" style="">Running</span>
-</div>
-<div class="flex flex-col items-center gap-2 shrink-0">
-<div class="h-16 w-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-3xl" style="">fitness_center</span>
-</div>
-<span class="text-xs font-semibold" style="">Entrenamiento</span>
-</div>
-<div class="flex flex-col items-center gap-2 shrink-0">
-<div class="h-16 w-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-3xl" style="">sports_basketball</span>
-</div>
-<span class="text-xs font-semibold" style="">Básquetbol</span>
-</div>
-<div class="flex flex-col items-center gap-2 shrink-0">
-<div class="h-16 w-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-3xl" style="">hiking</span>
-</div>
-<span class="text-xs font-semibold" style="">Aire libre</span>
-</div>
-</section>
-<!-- Featured Products -->
-<section class="px-4 py-4">
-<div class="flex items-end justify-between mb-6">
-<div>
-<h2 class="text-2xl font-black tracking-tight uppercase" style="">EQUIPO <span class="text-primary" style="">DESTACADO</span></h2>
-<p class="text-slate-500 dark:text-slate-400 text-xs" style="">Curado para la excelencia</p>
-</div>
-<a class="text-primary text-sm font-bold flex items-center gap-1 uppercase tracking-tighter" href="#" style="">VER TODO <span class="material-symbols-outlined text-sm" style="">arrow_forward</span></a>
-</div>
-<div class="grid grid-cols-2 gap-4">
-<!-- Product Card 1 -->
-<div class="flex flex-col gap-3 group">
-<div class="relative w-full aspect-[4/5] bg-slate-100 dark:bg-primary/5 rounded-xl overflow-hidden">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Red high-performance running shoes on dark background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBp1yK3dZEa0xsilXh3xRPejUb0_KuIeCASdHHorJj8Qt_Xg10JvLAY8rMgHiHNppjYdfxSVuvHZKO2WoWJNbWJBXCytjuGkjrkhzPS1QzINF4egueDqtWCxkOePA1gQ8E44jT20qxhyMAELKPKHyS1aVFd5-cnfb7eVSgg_RzjhkgT-Cvo244QByc-DI5TS9z2642YTTJFQHS1doQFrtw8J-s18i6aBK9xU9NI9TS0sHMxZg1PS5QZl4Ir9NEpXW_8-i_uLGWN_nWW");'></div>
-<span class="absolute top-2 left-2 bg-primary text-white text-[10px] font-black px-2 py-1 rounded uppercase" style="">POPULAR</span>
-<button class="absolute bottom-2 right-2 h-9 w-9 bg-white dark:bg-background-dark text-slate-900 dark:text-slate-100 rounded-full flex items-center justify-center shadow-md" style="">
-<span class="material-symbols-outlined text-xl" style="">favorite</span>
-</button>
-</div>
-<div class="flex flex-col gap-1">
-<p class="text-slate-900 dark:text-slate-100 text-sm font-bold leading-tight" style="">Ultra-Light Runner Elite</p>
-<p class="text-primary text-lg font-black" style="">$120.00</p>
-<button class="mt-1 w-full py-2 bg-slate-900 dark:bg-slate-100 text-white dark:text-background-dark text-[11px] font-black uppercase rounded tracking-widest hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-colors" style="">COMPRAR</button>
-</div>
-</div>
-<!-- Product Card 2 -->
-<div class="flex flex-col gap-3 group">
-<div class="relative w-full aspect-[4/5] bg-slate-100 dark:bg-primary/5 rounded-xl overflow-hidden">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Modern sports jersey with sleek design" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAqmNPbMQ8cVi94gypXJIeNh5bYOW04_PqfcsKHYPkHwjXxu08yfcK67dfMJr-3IvPIBxu-bFsY5Z27PLV1uInquM2baX0L7iMg3GM8hXip8DnfEic6qiqO9fZZWXG87W9JxhVuuW6th77wd75NaxfKmiFnCj_c1xhzf96ihsH3Wr4ZcpAVg_daML7Q990SQzrhuu6mlcBBj6HTyWRAmkSQq4qohWfNUgVRfw5lgGN9pQhL8Sf-KwNYeSxCUhNZVHkg7qBP84wmHc9j");'></div>
-<button class="absolute bottom-2 right-2 h-9 w-9 bg-white dark:bg-background-dark text-slate-900 dark:text-slate-100 rounded-full flex items-center justify-center shadow-md" style="">
-<span class="material-symbols-outlined text-xl" style="">favorite</span>
-</button>
-</div>
-<div class="flex flex-col gap-1">
-<p class="text-slate-900 dark:text-slate-100 text-sm font-bold leading-tight" style="">Official V-Strike Jersey</p>
-<p class="text-primary text-lg font-black" style="">$85.00</p>
-<button class="mt-1 w-full py-2 bg-slate-900 dark:bg-slate-100 text-white dark:text-background-dark text-[11px] font-black uppercase rounded tracking-widest hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-colors" style="">COMPRAR</button>
-</div>
-</div>
-<!-- Product Card 3 -->
-<div class="flex flex-col gap-3 group">
-<div class="relative w-full aspect-[4/5] bg-slate-100 dark:bg-primary/5 rounded-xl overflow-hidden">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Professional grade gym dumbbells and weights" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDREFBbTg0j6OPrslLcVPx2hBfxGEWB2bXv4rHG-HdRy6uk3H_SV5_isy_N4cksiqKFkz2yoQ8YGT3hl6SQ7rR8nwiFXzC3C1g2-CwGeY18hwKYWAu3s-UD2NK-wehk5Cb0LLNNEeEW4aFfwFFGLwoezqCtzRNJV-JT_IZkZU6VYppCGJnbZD_cxg1q1jmbV5ZpKwwthfJIuWwrHSKOReUCrgqWw-OgyakZkGrq1JpWOryHn4g_1yjmfC6fnjqipB0INim8oLgZIy_w");'></div>
-<span class="absolute top-2 left-2 bg-slate-900 text-white text-[10px] font-black px-2 py-1 rounded uppercase" style="">NUEVO</span>
-<button class="absolute bottom-2 right-2 h-9 w-9 bg-white dark:bg-background-dark text-slate-900 dark:text-slate-100 rounded-full flex items-center justify-center shadow-md" style="">
-<span class="material-symbols-outlined text-xl" style="">favorite</span>
-</button>
-</div>
-<div class="flex flex-col gap-1">
-<p class="text-slate-900 dark:text-slate-100 text-sm font-bold leading-tight" style="">Precision Grip Weights</p>
-<p class="text-primary text-lg font-black" style="">$45.00</p>
-<button class="mt-1 w-full py-2 bg-slate-900 dark:bg-slate-100 text-white dark:text-background-dark text-[11px] font-black uppercase rounded tracking-widest hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-colors" style="">COMPRAR</button>
-</div>
-</div>
-<!-- Product Card 4 -->
-<div class="flex flex-col gap-3 group">
-<div class="relative w-full aspect-[4/5] bg-slate-100 dark:bg-primary/5 rounded-xl overflow-hidden">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Breathable mesh athletic shorts" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDY-tpTP-oHYL66X7xMYmazbZ-Z_-_V7cMUMkGgNnTyI2pP2OwCsDe4J09u8_390PF14tzucCIxWWxds6lBtIRjsv5czyOUISSx2hRjGlZe4kysAaaCcRkOB_buQONqLvJd1Klv2EvO_sBnEO1mmQAMUMHYOkBMtEHmK11oEkIOugX1f3PICVUWatDk8YWYS2Eo6oj-n78vBwEf4TmLa83wbff6TfZbmGgUy2pt-QyJoMIrge9HRt36ORvpE0p_FYak4-vZjPcdk8v5");'></div>
-<button class="absolute bottom-2 right-2 h-9 w-9 bg-white dark:bg-background-dark text-slate-900 dark:text-slate-100 rounded-full flex items-center justify-center shadow-md" style="">
-<span class="material-symbols-outlined text-xl" style="">favorite</span>
-</button>
-</div>
-<div class="flex flex-col gap-1">
-<p class="text-slate-900 dark:text-slate-100 text-sm font-bold leading-tight" style="">Pro-Dry Training Shorts</p>
-<p class="text-primary text-lg font-black" style="">$30.00</p>
-<button class="mt-1 w-full py-2 bg-slate-900 dark:bg-slate-100 text-white dark:text-background-dark text-[11px] font-black uppercase rounded tracking-widest hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-colors" style="">COMPRAR</button>
-</div>
-</div>
-</div>
-</section>
-<!-- Newsletter / Promo -->
-<section class="px-4 py-10 bg-primary/5 border-y border-primary/10 my-6" id="contacto">
-<div class="text-center flex flex-col gap-4">
-<h3 class="text-2xl font-black uppercase tracking-tighter" style="">Únete al Club <span class="text-primary" style="">Victoria</span></h3>
-<p class="text-slate-500 dark:text-slate-400 text-sm px-4" style="">Obtén 15% de descuento en tu primer pedido y acceso exclusivo a lanzamientos limitados.</p>
-<div class="flex flex-col gap-2 mt-2">
-<input class="w-full bg-white dark:bg-background-dark border-slate-300 dark:border-primary/20 rounded-lg px-4 h-12 text-sm focus:ring-primary focus:border-primary" placeholder="Ingresa tu correo" type="email"/>
-<button class="w-full h-12 bg-primary text-white font-black uppercase tracking-widest rounded-lg" style="">SUSCRIBIRSE</button>
-</div>
-</div>
-</section>
-</main>
-<!-- Bottom Navigation Bar -->
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
-</body></html>
+<body class="overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 h-16 bg-white/80 backdrop-blur-md border-b border-gray-200">
+        <div class="flex items-center gap-2">
+            <i data-lucide="droplets" class="text-[#00658d] w-6 h-6"></i>
+            <span class="font-headline font-black tracking-tighter uppercase text-xl text-[#00658d]">AGUA PURIFIC</span>
+        </div>
+        <button class="p-2 hover:bg-gray-100 rounded-full transition-colors">
+            <i data-lucide="menu" class="text-[#00658d] w-6 h-6"></i>
+        </button>
+    </header>
+
+    <main class="pt-16 pb-24">
+        <!-- Hero Section -->
+        <section class="relative min-h-[80vh] flex items-end overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img class="w-full h-full object-cover grayscale brightness-[0.4]" 
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLDVBeEbNU6iXl83XDWcYHxemwyzWjVfxGK_NZN_xk_u70Jx-eTSbRwlMn6IW99zUuUVBEi8reepDC11jlEjLx0nBR3WpEVBq9JbDAO6QdARKDMq95TxlqBVc4eNSB7RtcAdKlEssfl3_ki5ueWteAijUKpkxHWbXGa1bHuaucwNWOgAzklaJ5dbXfrF-yNLFlbGlsm7KSyv2RMlIWuY4gjVLqm1Donuq6v3ERGMl1h8o6EwkOt4LOPT7_n0uXO45X_v27oVZEi-A" 
+                     alt="Industrial pipes">
+            </div>
+            <div class="relative z-10 p-6 mb-12 w-full max-w-4xl mx-auto">
+                <div class="bg-[#00658d] border-l-4 border-white p-4 mb-6 inline-block">
+                    <span class="text-xs font-bold tracking-[0.2em] text-white uppercase">INGENIERÍA DE AGUA</span>
+                </div>
+                <h1 class="font-headline text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-4 leading-none uppercase">
+                    Suministro<br>de Agua Desmineralizada
+                </h1>
+                <p class="text-white/90 text-lg md:text-xl max-w-md mb-8 font-medium">
+                    Protegemos la infraestructura de la industria con precisión técnica y logística.
+                </p>
+            </div>
+        </section>
+
+        <!-- Dual Segmentation -->
+        <section class="p-6 grid grid-cols-1 md:grid-cols-2 gap-6 -mt-10 relative z-20 max-w-6xl mx-auto">
+            <!-- Card 1: Commerce -->
+            <div class="bg-white p-8 shadow-2xl border-b-4 border-[#00aeef]">
+                <div class="flex items-center justify-between mb-6">
+                    <i data-lucide="store" class="text-[#3a5f94] w-10 h-10"></i>
+                    <span class="text-[10px] tracking-widest text-gray-400 uppercase font-bold">SEGMENTO 01</span>
+                </div>
+                <h3 class="font-headline text-2xl font-bold text-gray-900 mb-3 uppercase">Soluciones para Comercios</h3>
+                <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                    Tintorerías y Talleres especializados. Enfoque en protección de maquinaria térmica y optimización de costos operativos.
+                </p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center gap-2 text-xs font-semibold text-[#3a5f94]">
+                        <i data-lucide="check-circle-2" class="w-4 h-4"></i> EVITA INCRUSTACIONES
+                    </li>
+                    <li class="flex items-center gap-2 text-xs font-semibold text-[#3a5f94]">
+                        <i data-lucide="check-circle-2" class="w-4 h-4"></i> EXTENSIÓN DE VIDA ÚTIL
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Card 2: Industry -->
+            <div class="bg-[#001e2d] text-white p-8 shadow-2xl relative overflow-hidden">
+                <div class="flex items-center justify-between mb-6 relative z-10">
+                    <i data-lucide="factory" class="text-[#00aeef] w-10 h-10"></i>
+                    <span class="text-[10px] tracking-widest text-[#00aeef] opacity-60 uppercase font-bold">SEGMENTO 02</span>
+                </div>
+                <h3 class="font-headline text-2xl font-bold mb-3 uppercase relative z-10">Soluciones para la Industria</h3>
+                <p class="text-white/80 text-sm mb-6 leading-relaxed relative z-10">
+                    En industrias donde el residuo no es una opción, somos el socio estratégico de su línea de producción.
+                </p>
+                <div class="grid grid-cols-2 gap-4 mb-8 relative z-10">
+                    <div class="bg-white/5 p-3">
+                        <span class="block text-[10px] text-[#00aeef] font-bold uppercase mb-1">Volumen</span>
+                        <span class="text-lg font-bold">Pipas 10k-30k L</span>
+                    </div>
+                    <div class="bg-white/5 p-3">
+                        <span class="block text-[10px] text-[#00aeef] font-bold uppercase mb-1">Norma</span>
+                        <span class="text-lg font-bold">ISO 9001:2015</span>
+                    </div>
+                </div>
+                <button class="w-full py-3 bg-[#00aeef] text-[#001e2d] font-bold text-xs tracking-widest uppercase relative z-10">
+                    CONSULTAR INGENIERÍA
+                </button>
+            </div>
+        </section>
+
+        <!-- Technical Specs -->
+        <section class="p-6 py-16 industrial-texture max-w-4xl mx-auto">
+            <div class="mb-10 text-center">
+                <h2 class="font-headline text-3xl font-black text-[#00658d] mb-2 uppercase tracking-tighter">Especificaciones Técnicas</h2>
+                <div class="h-1 w-20 bg-[#00aeef] mx-auto"></div>
+            </div>
+            <div class="bg-white shadow-sm overflow-hidden border border-gray-200">
+                <table class="w-full text-left border-collapse">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="p-4 text-[10px] tracking-widest text-gray-500 uppercase font-bold">Parámetro de Calidad</th>
+                            <th class="p-4 text-[10px] tracking-widest text-gray-500 uppercase font-bold text-right">Valor Típico</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr>
+                            <td class="p-4 flex items-center gap-3">
+                                <i data-lucide="zap" class="text-[#00658d] w-5 h-5"></i>
+                                <div><p class="font-bold text-sm">Conductividad</p></div>
+                            </td>
+                            <td class="p-4 text-right font-headline font-bold text-[#00658d]">&lt;5 µS/cm</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 flex items-center gap-3">
+                                <i data-lucide="flask-conical" class="text-[#00658d] w-5 h-5"></i>
+                                <div><p class="font-bold text-sm">pH @ 25°C</p></div>
+                            </td>
+                            <td class="p-4 text-right font-headline font-bold text-[#00658d]">5.5 - 7.5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-100 py-12 px-6 border-t border-gray-200 text-center">
+            <div class="max-w-4xl mx-auto">
+                <div class="font-headline font-black text-[#00658d] text-2xl tracking-tighter uppercase mb-4">AGUA PURIFIC</div>
+                <p class="text-xs text-gray-500 mb-8">© 2026 AGUA PURIFIC | WD Chemicals.</p>
+                <a href="#" class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-8 py-4 font-bold uppercase tracking-widest text-xs rounded-sm w-full max-w-sm">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i> WHATSAPP
+                </a>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Bottom Nav -->
+    <nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center py-3 bg-white border-t border-gray-200 shadow-2xl md:hidden">
+        <div class="flex flex-col items-center text-[#00658d]"><i data-lucide="home"></i><span class="text-[10px] font-bold uppercase">Home</span></div>
+        <div class="flex flex-col items-center text-gray-400"><i data-lucide="settings-2"></i><span class="text-[10px] font-bold uppercase">Services</span></div>
+        <div class="flex flex-col items-center text-gray-400"><i data-lucide="factory"></i><span class="text-[10px] font-bold uppercase">Industries</span></div>
+    </nav>
+
+    <script>
+        // Inicializar iconos de Lucide
+        lucide.createIcons();
+    </script>
+</body>
+</html>
