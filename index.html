@@ -1,430 +1,76 @@
-<html class="light" lang="es"><head></head><body class="bg-surface text-on-surface font-body-md">```html
-
-
-
-    <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "on-error-container": "#93000a",
-                    "error-container": "#ffdad6",
-                    "on-secondary": "#ffffff",
-                    "on-secondary-fixed": "#001e2d",
-                    "surface-dim": "#d5dbe0",
-                    "inverse-surface": "#2b3136",
-                    "on-tertiary-fixed-variant": "#3c475a",
-                    "secondary": "#00658d",
-                    "outline": "#73777e",
-                    "secondary-fixed": "#c6e7ff",
-                    "tertiary": "#101c2d",
-                    "on-primary-fixed-variant": "#2b486a",
-                    "on-primary-fixed": "#001c37",
-                    "on-tertiary-container": "#8d99ae",
-                    "primary-fixed-dim": "#acc9f0",
-                    "surface-container-highest": "#dee3e9",
-                    "surface-container-low": "#eff4fa",
-                    "primary-fixed": "#d2e4ff",
-                    "on-tertiary": "#ffffff",
-                    "on-secondary-container": "#004b69",
-                    "tertiary-fixed-dim": "#bbc7dd",
-                    "inverse-primary": "#acc9f0",
-                    "secondary-container": "#41befd",
-                    "inverse-on-surface": "#ecf1f7",
-                    "surface-container-high": "#e4e9ef",
-                    "error": "#ba1a1a",
-                    "on-error": "#ffffff",
-                    "on-surface-variant": "#43474e",
-                    "tertiary-container": "#253142",
-                    "on-primary-container": "#7e9bc0",
-                    "primary": "#001d37",
-                    "surface-tint": "#446083",
-                    "surface": "#f6faff",
-                    "primary-container": "#123252",
-                    "surface-variant": "#dee3e9",
-                    "surface-container": "#e9eef4",
-                    "on-tertiary-fixed": "#101c2c",
-                    "on-primary": "#ffffff",
-                    "surface-container-lowest": "#ffffff",
-                    "on-secondary-fixed-variant": "#004c6b",
-                    "surface-bright": "#f6faff",
-                    "on-surface": "#171c21",
-                    "secondary-fixed-dim": "#81cfff",
-                    "background": "#f6faff",
-                    "on-background": "#171c21",
-                    "outline-variant": "#c3c6cf",
-                    "tertiary-fixed": "#d7e3fa"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "spacing": {
-                    "stack-lg": "64px",
-                    "stack-sm": "16px",
-                    "container-max": "1280px",
-                    "unit": "8px",
-                    "margin": "48px",
-                    "gutter": "24px",
-                    "stack-md": "32px"
-            },
-            "fontFamily": {
-                    "headline-xl": ["Work Sans"],
-                    "label-md": ["Work Sans"],
-                    "body-lg": ["Work Sans"],
-                    "headline-lg": ["Work Sans"],
-                    "headline-md": ["Work Sans"],
-                    "body-md": ["Work Sans"]
-            },
-            "fontSize": {
-                    "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
-                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
-                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
-            }
-          },
-        },
-      }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Muy pronto! Libro a la venta</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a2e;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
         }
-        .industrial-mask {
-            clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+        .container {
+            max-width: 800px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #f1c40f;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid #f1c40f;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            margin-bottom: 30px;
+        }
+        .cta-section {
+            background: #16213e;
+            padding: 30px;
+            border-radius: 15px;
+        }
+        input[type="email"] {
+            padding: 10px;
+            width: 250px;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #f1c40f;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
         }
     </style>
-<!-- TopAppBar Component -->
-<header class="fixed top-0 left-0 w-full z-50 bg-white border-b border-slate-200">
-<nav class="max-w-[1280px] mx-auto px-12 py-6 flex justify-between items-center w-full">
-<div class="text-xl font-black text-slate-900 font-headline-md tracking-tighter">WD CHEMICALS</div>
-<div class="hidden md:flex gap-8 items-center">
-<a class="font-['Work_Sans'] uppercase tracking-wider text-sm font-bold text-sky-600 border-b-2 border-sky-600 pb-1" href="#">Soluciones</a>
-<a class="font-['Work_Sans'] uppercase tracking-wider text-sm font-bold text-slate-600 hover:text-sky-500 transition-colors duration-200" href="#">Servicios</a>
-<a class="font-['Work_Sans'] uppercase tracking-wider text-sm font-bold text-slate-600 hover:text-sky-500 transition-colors duration-200" href="#">Sustentabilidad</a>
-<a class="font-['Work_Sans'] uppercase tracking-wider text-sm font-bold text-slate-600 hover:text-sky-500 transition-colors duration-200" href="#">Contacto</a>
-</div>
-<button class="bg-secondary-container text-on-primary font-label-md px-6 py-3 uppercase tracking-wider transition-opacity active:opacity-70">Solicitar Diagnóstico</button>
-</nav>
-</header>
-<main class="pt-24">
-<!-- Hero Section -->
-<section class="relative min-h-[870px] flex items-center overflow-hidden bg-primary-container">
-<div class="absolute inset-0 z-0 opacity-40">
-<img alt="high-quality macro industrial photo of polished steel pipes and water filtration systems" class="w-full h-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoiQNZsS_e0Git34uMe4Td0UU4WFq1JPh3ndSoWBZywEWZAjAFs_FC3W19cQCS-3kRHaNKPGuhFYQdojD6-lf5FtPEMYyZVuYMSTfxMSGKovUod2mTNT30TbsrGwEhKrL7s5WFaWpnL2shoyvnEH0-NQ-LBz76wCVwgLCT3cKsIi8JCUP-BX-tR0EAzouL0dChJAqLZ67WpsgcRL8Eu7nPcdK_oE8vnoD0VOc44SLHMnYK5tGn0s8vxuLra1kXXcEqrLGVVZXyw10"/>
-</div>
-<div class="relative z-10 max-w-[1280px] mx-auto px-12 w-full grid md:grid-cols-2 gap-12">
-<div class="flex flex-col justify-center gap-6">
-<h1 class="font-headline-xl text-[#8E9AAF]">Maximice la Eficiencia de sus Sistemas Críticos con Tecnología Química de Vanguardia</h1>
-<p class="max-w-lg text-xl text-white">Garantizamos la continuidad operativa de su planta, reduciendo costos de energía y extendiendo la vida útil de sus activos.</p>
-<div class="pt-4">
-<button class="bg-secondary-container text-primary font-headline-md px-8 py-4 uppercase tracking-widest border-none transition-all hover:bg-cyan-400">
-                            Solicitar Diagnóstico Técnico</button>
-</div>
-</div>
-</div>
-</section>
-<!-- Problem/Solution Section -->
-<section class="py-stack-lg bg-surface">
-<div class="max-w-[1280px] mx-auto px-12">
-<div class="grid md:grid-cols-2 gap-0 border border-outline-variant">
-<div class="p-12 bg-white flex flex-col gap-6">
-<span class="text-error font-label-md uppercase">Riesgos Industriales</span>
-<h2 class="font-headline-lg text-primary">El costo de la negligencia química</h2>
-<ul class="space-y-4">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-error">warning</span>
-<span class="font-body-md text-on-surface-variant">Corrosión acelerada en calderas y torres de enfriamiento.</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-error">warning</span>
-<span class="font-body-md text-on-surface-variant">Incrustaciones que disparan el consumo de combustible.</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-error">warning</span>
-<span class="font-body-md text-on-surface-variant">Paros no programados por fallas críticas de sistema.</span>
-</li>
-</ul>
-</div>
-<div class="p-12 bg-primary-container text-white flex flex-col gap-6">
-<span class="text-secondary-container font-label-md uppercase">WD Chemicals</span>
-<h2 class="font-headline-lg">Precisión que protege su inversión</h2>
-<ul class="space-y-4">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary-container">check_circle</span>
-<span class="font-body-md text-primary-fixed">Monitoreo analítico de parámetros químicos en tiempo real.</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary-container">check_circle</span>
-<span class="font-body-md text-primary-fixed">Tratamientos personalizados según la dureza del agua local.</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary-container">check_circle</span>
-<span class="font-body-md text-primary-fixed">Optimización de ciclos de concentración y purgas.</span>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<!-- Services Grid (Asymmetric Bento) -->
-<section class="py-stack-lg bg-surface-container-low">
-<div class="max-w-[1280px] mx-auto px-12">
-<div class="flex flex-col gap-2 mb-12">
-<h2 class="font-headline-lg text-primary uppercase">Servicios de Ingeniería Especializada</h2>
-<div class="h-1 w-24 bg-secondary-container"></div>
-</div>
-<div class="grid md:grid-cols-12 gap-gutter">
-<!-- Card 1 -->
-<div class="md:col-span-8 bg-white border border-outline-variant p-8 flex flex-col md:flex-row justify-between min-h-[300px] group hover:border-secondary-container transition-colors gap-8">
-<div class="flex flex-col justify-between">
-<div>
-<span class="material-symbols-outlined text-4xl text-primary mb-4">monitoring</span>
-<h3 class="font-headline-md text-primary mb-2">Monitoreo Especializado de Chillers</h3>
-<p class="text-on-surface-variant font-body-md max-w-sm">Análisis de laboratorio y seguimiento de tendencias para sistemas de enfriamiento HVAC y procesos industriales críticos.</p>
-</div>
-<div class="pt-4">
-<span class="text-secondary font-label-md">CONTROL DE BIOFILM Y CORROSIÓN</span>
-</div>
-</div>
-<div class="w-full md:w-1/2 overflow-hidden h-full">
-<img alt="Industrial chiller unit in a mechanical room" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkDD0LN7fEIP1QnNQ9oxl3LcfEj-dTrkFA_OWqVT8570Dg0BjynIRDguf9FZUjlL1eNYcwORQRXw3nV2GSwmL_t-DoOQdDcG_v5VuFj9VETwU-yvKV7rbDJ8AsMDnPPJHwYZmP1tjIqJgkzRRsKd1fOvdAMK_toeggOshokKfJ2yn-symhqcBuegSOj8lrKmU1FYnBbjcbATHeAIbTvyNGrKyz97GnL533B8Pp4Slr0HjXGNiDRSGDZkU9rcFET6j9DfJZsWOfW2I"/>
-</div>
-</div>
-<!-- Card 2 -->
-<div class="md:col-span-4 bg-primary-container text-white p-8 border border-primary-container flex flex-col justify-between group">
-<div>
-<span class="material-symbols-outlined text-4xl text-secondary-container mb-4">settings_suggest</span>
-<h3 class="font-headline-md mb-2">Dosificación Automatizada</h3>
-<p class="text-primary-fixed text-sm">Sistemas inteligentes que inyectan el químico exacto en el momento preciso.</p>
-</div>
-<div class="mt-4 opacity-50 group-hover:opacity-100 transition-opacity">
-<div class="h-1 w-full bg-secondary-container/20"><div class="h-1 bg-secondary-container w-2/3"></div></div>
-</div>
-</div>
-<!-- Card 3 -->
-<div class="md:col-span-4 bg-white border border-outline-variant p-8 group overflow-hidden flex flex-col">
-<div class="mb-6">
-<span class="material-symbols-outlined text-4xl text-primary mb-4">energy_savings_leaf</span>
-<h3 class="font-headline-md text-primary mb-2">Ingeniería de Ahorro en Calderas</h3>
-<p class="text-on-surface-variant text-sm mb-4">Auditorías térmicas enfocadas en la reducción del consumo de combustible y prevención de incrustaciones.</p>
-</div>
-<div class="mt-auto -mx-8 -mb-8">
-<img alt="Industrial boiler inside a chemical plant" class="w-full h-48 object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQxB7XutpmrP3O4g8YkSmFVytq5jPeWKpDitBN38p_QR3MX2M6LOOeansv65S5ep1zqbtra6VqqjnAOcqU0ZfnqL0WYQgZa4Z3D_opn1DvOV0Z6bV1ZdL-p7j_GBX0TtGxU9lCFNMpNTA3E4VX466-eGT6htWKy5IBCNJm1MCbkxJLwum2Afr2-lbBmHSJZi1fIqUbEeo1KMNrhSTihWNF8r7vVEqv9oqk2XbCSt260iGfNLrZYQ6tQbYnX5C3FXsi2_jjGIUHVQY"/>
-</div>
-</div>
-<!-- Card 4 -->
-<div class="md:col-span-4 bg-white border border-outline-variant p-8">
-<span class="material-symbols-outlined text-4xl text-primary mb-4">build</span>
-<h3 class="font-headline-md text-primary mb-2">Mantenimiento Mecánico</h3>
-<p class="text-on-surface-variant text-sm">Limpiezas químicas y mecánicas profundas para restaurar la eficiencia original.</p>
-</div>
-<!-- Card 5 -->
-<div class="md:col-span-4 bg-secondary-container text-primary p-8">
-<span class="material-symbols-outlined text-4xl mb-4">school</span>
-<h3 class="font-headline-md mb-2">Capacitación DC-3</h3>
-<p class="font-bold text-sm">Certificación técnica para su personal operativo bajo estándares de seguridad nacional.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Rental Equipment Section -->
-<section class="py-stack-lg bg-surface">
-<div class="max-w-[1280px] mx-auto px-12">
-<div class="flex flex-col gap-2 mb-12">
-<h2 class="font-headline-lg text-primary uppercase">Renta de Equipo Industrial</h2>
-<div class="h-1 w-24 bg-secondary-container"></div>
-</div>
-<div class="grid md:grid-cols-3 gap-gutter mb-12">
-<div class="bg-white border border-outline-variant group">
-<div class="aspect-[3/4] overflow-hidden">
-<img alt="Sistemas de dosificación para tratamiento de agua" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0ugnZFqZiUuLAMFi2yHNmI6iHno3eWyj4BpUuLA1ch-9kVTPpYNUlAW5qlQz97xdgz1CJcKCRRFK0G0HWXxixfgBoEB1AI27bq02YowPmUBm0YBuaLTJzocfMXofizdVwN2uOL54HTyD2DY754BN5w-SGwbQsNe0QTi1OKqzytBlo3fUZCQOWRuth2KOa9mlcd9fNkHh0zuMzQUbYdYh1zsDiEEjQv1Carxly5YxSyfqzMXgiJulGdFZlCn7u50m8riMYext3CVrxg"/>
-</div>
-<div class="p-6">
-<h4 class="font-headline-md text-primary mb-2">Dosificación Automatizada</h4>
-<p class="text-on-surface-variant text-sm">Sistemas de inyección de químicos configurados para sus necesidades inmediatas.</p>
-</div>
-</div>
-<div class="bg-white border border-outline-variant group">
-<div class="aspect-[3/4] overflow-hidden">
-<img alt="Unidades de monitoreo y control industrial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0uhafDaNmRi9KB7KDpLiOaezQQlMzY0gl2NyqP8MV1yehI8QGVXNH042rCOS3eEuPFfHCDcoWHnbkRKFA8wOU0NuY663TfjiepZ1ujMiAxL9c_ayyqjZuMdsFcUsjW4aYSyzEJ6OtEJZwbw8EjTf6orvABXbIw7OVvfQUO-WA2-3xQo0h5HGxS0HtXNMVvKn6KjY40mYWr1NBN4KceUWC3gaE1IaPjt0BTQN1dvWRk1bxxvjrwcRlZaBrbp6bp4Z55cUnpHqu1g9Bw"/>
-</div>
-<div class="p-6">
-<h4 class="font-headline-md text-primary mb-2">Unidades de Monitoreo</h4>
-<p class="text-on-surface-variant text-sm">Controladores analíticos portátiles para seguimiento de parámetros en sitio.</p>
-</div>
-</div>
-<div class="bg-white border border-outline-variant group">
-<div class="aspect-[3/4] overflow-hidden">
-<img alt="Equipo de filtración y purificación de agua" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0ug6Aju_i3BZ38o5rnKy4TRndcvSGx2ViMK8tilS4WSPvx6ldxvuSD6HZwhdFqpUbqWjcS4-mfeQHSBbSllB2sbeRon777_LLiEizls_NXJMi4ccHf0rwVJ5GomHZycHff3kYqhPR_GA7LKWsvrFIltPgPs14EmzeQ7NKWkJDFU0otuQa_ohnLjFZUG2HuSac3KlUZdVo5NyF-0-Pu2AU0RhFmOdoU5HcDOcuk3kRFnK65rW0FN_klqFO5I6_IzwLg1mqg34WfsQ"/>
-</div>
-<div class="p-6">
-<h4 class="font-headline-md text-primary mb-2">Sistemas de Filtración</h4>
-<p class="text-on-surface-variant text-sm">Equipos de purificación y suavización para tratamiento temporal de agua.</p>
-</div>
-</div>
-</div>
-<div class="bg-primary-container p-12 text-white flex flex-col md:flex-row items-center justify-between gap-8 border-l-[12px] border-secondary-container">
-<div class="max-w-2xl">
-<h3 class="font-headline-md mb-4 text-secondary-container uppercase">Soluciones Flexibles de Arrendamiento</h3>
-<p class="font-body-md opacity-90">Ofrecemos planes de renta a corto y largo plazo para sistemas de tratamiento de agua, permitiéndole mantener la eficiencia sin la necesidad de inversión de capital inmediata. Ideal para contingencias o proyectos temporales.</p>
-</div>
-<button class="bg-secondary-container text-primary font-headline-md px-10 py-5 uppercase tracking-widest hover:bg-cyan-400 transition-colors whitespace-nowrap">
-                    Solicitar Cotización de Renta
-                </button>
-</div>
-</div>
-</section>
-<!-- Agua Purific Section -->
-<section class="py-stack-lg bg-white">
-<div class="max-w-[1280px] mx-auto px-12">
-<div class="flex flex-col md:flex-row items-center gap-12 p-12 bg-surface-container-low border border-outline-variant">
-<div class="md:w-1/2 flex flex-col gap-6">
-<div class="h-1 w-24 bg-secondary-container"></div>
-<h2 class="font-headline-lg text-primary uppercase">Contamos con productos de Agua Purific</h2>
-<p class="font-body-md text-on-surface-variant">Ofrecemos soluciones integrales de purificación con estándares de grado industrial. Nuestra alianza con Agua Purific garantiza el suministro de agua tratada con los más altos niveles de calidad y pureza, esenciales para la integridad de sus procesos químicos y sistemas térmicos.</p>
-<a class="inline-flex justify-center bg-secondary-container text-primary font-headline-md px-8 py-4 uppercase tracking-widest transition-all hover:bg-cyan-400 w-fit" href="https://aguapurific.com/" target="_blank">
-                        Ver Productos Agua Purific
-                    </a>
-</div>
-<div class="md:w-1/2 relative">
-<img alt="High purity water filtration equipment for industrial use" class="w-full h-80 object-cover shadow-lg industrial-mask" src="https://lh3.googleusercontent.com/aida/ADBb0ujcxxeZLK_qS6ZXemvpspvcoghhYiB3l8nM2j9Cez-jgmo-V63Dvq2v-RzqKGWzYOe4EatfnGKivMrdSepL8h7rj8byz8jAnVcvJfg7AmFZQ0J36mRHT8x1gyPgLJoOHizmhY5CcbEMJEqdxrv2gUaLALmN6pNTEZg7aASkg48Wfupy5nMPWEG4Kk1fvByMfopdUEb7hQ6klvw1s5pKTam9CEqu-wZyeMvmpB7U_Sw1EUAqicbsYyOqSVX-3jBmgy0nfDUye9WAOQ"/>
-</div>
-</div>
-</div>
-</section>
-<!-- Systems Gallery / Efficiency Props -->
-<section class="py-stack-lg bg-surface-container-low overflow-hidden">
-<div class="max-w-[1280px] mx-auto px-12">
-<div class="grid md:grid-cols-2 gap-12 items-center">
-<div class="relative group">
-<div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-secondary-container z-10"></div>
-<img alt="Industrial cooling tower, large scale engineering" class="w-full h-[500px] object-cover industrial-mask" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjKJe5gBhyHt17hHM8b_EmemGrVPF18u6akKKTtMMdc0ZSL5R1wgpK7XC7FnI-ruF9ZWcb7qWHNagAybFZS0QepqQkY58EQuTNCGMr_3TMp6JtAb7dp14k98hXxMWuQCeOfzAua5aaPqX95F0EcumpEQZFxnN6LnX3WRf2Eb3QURxplwVdgKyVt258f-wIBL-oB3s82wIwIMU9hnLHBXx3Zk01qnoWCIrIBNwGqYONJtCJHZ0y1F0z-RlohGk22sURTWNnmSNvONQ"/>
-<div class="absolute bottom-8 right-8 bg-primary-container text-white p-6 max-w-xs shadow-xl">
-<p class="font-label-md text-secondary-container uppercase mb-2">Impacto Ambiental</p>
-<h4 class="font-headline-md mb-2">Torres de Enfriamiento</h4>
-<p class="text-xs text-primary-fixed">Optimizamos el uso de agua y energía mediante tratamientos de última generación.</p>
-</div>
-</div>
-<div class="flex flex-col gap-8">
-<div class="flex flex-col gap-2">
-<h2 class="font-headline-lg text-primary uppercase">Sustentabilidad y Eficiencia Térmica</h2>
-<p class="text-on-surface-variant font-body-lg">Nuestra tecnología no solo protege sus equipos, sino que reduce significativamente la huella hídrica y de carbono de su operación.</p>
-</div>
-<div class="grid grid-cols-1 gap-6">
-<div class="flex items-center gap-6 p-6 bg-white border-l-4 border-secondary-container shadow-sm">
-<span class="material-symbols-outlined text-primary text-4xl">thermostat</span>
-<div>
-<h4 class="font-headline-md text-primary">Eficiencia Térmica</h4>
-<p class="text-on-surface-variant text-sm">Reducción del diferencial de temperatura en intercambiadores de calor.</p>
-</div>
-</div>
-<div class="flex items-center gap-6 p-6 bg-white border-l-4 border-primary shadow-sm">
-<span class="material-symbols-outlined text-primary text-4xl">gavel</span>
-<div>
-<h4 class="font-headline-md text-primary">Seguridad Legal</h4>
-<p class="text-on-surface-variant text-sm">Cumplimiento total con normas ambientales y de seguridad (NOM-002-STPS).</p>
-</div>
-</div>
-<div class="flex items-center gap-6 p-6 bg-white border-l-4 border-secondary-container shadow-sm">
-<span class="material-symbols-outlined text-primary text-4xl">eco</span>
-<div>
-<h4 class="font-headline-md text-primary">Sustentabilidad Activa</h4>
-<p class="text-on-surface-variant text-sm">Tratamientos biodegradables que minimizan la huella hídrica industrial.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- High Impact Quote -->
-<section class="relative py-32 bg-slate-900 overflow-hidden">
-<div class="absolute inset-0 opacity-20">
-<img alt="industrial structural details with dramatic shadows" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOdyYcNh-VLoTjB8B_v4lZwk7O3LBPX3NTxK364TaoCWncXNWhtxPqEQwiljBshLAAZHQSQkAiT3K-CDsPumXYEvRiRYnrbwIB_UH9xxWfrsVYpPPp_8zCQTzikuU3jZXIA7IWUsELSjdTSZGfRfHfgiSUq_w-ayKTfMDoyPjs6tFlVpV-V25qu8QOPN29-v0ebDTruJ1_S6cDz9cjxRGgyxk8leFXAKeCe68uZGp0DcqOHxq6uwKBs_B1rmPeoiDBodh0ZF11aIU"/>
-</div>
-<div class="relative z-10 max-w-4xl mx-auto px-12 text-center">
-<p class="font-headline-xl text-white leading-tight italic">
-                    "En WD CHEMICALS, la seguridad y la ecología no son opciones, son pilares innegociables."
-                </p>
-<div class="mt-8 flex justify-center">
-<div class="h-1 w-12 bg-secondary-container"></div>
-</div>
-</div>
-</section>
-<!-- Lead Capture Form -->
-<section class="py-stack-lg bg-surface">
-<div class="max-w-[1280px] mx-auto px-12">
-<div class="bg-white border border-outline-variant grid md:grid-cols-2 shadow-sm">
-<div class="p-12 flex flex-col justify-center">
-<h2 class="font-headline-lg text-primary mb-4">Optimice su Planta Hoy</h2>
-<p class="text-on-surface-variant font-body-md mb-8">Nuestros ingenieros realizarán un levantamiento técnico de sus sistemas para identificar fugas de eficiencia.</p>
-<div class="space-y-4">
-<div class="flex items-center gap-4 text-primary">
-<span class="material-symbols-outlined">call</span>
-<span class="font-label-md">+52 777 531 8482</span>
-</div>
-<div class="flex items-center gap-4 text-primary">
-<span class="material-symbols-outlined">mail</span>
-<span class="font-label-md">contacto@wdchemicals.com</span>
-</div>
-</div>
-</div>
-<div class="p-12 bg-surface-container-low">
-<form class="flex flex-col gap-6">
-<div class="flex flex-col gap-2">
-<label class="font-label-md text-primary uppercase">Nombre Completo</label>
-<input class="border border-outline-variant bg-white p-3 focus:ring-2 focus:ring-secondary-container focus:border-secondary-container outline-none" placeholder="Ing. Juan Pérez" type="text"/>
-</div>
-<div class="flex flex-col gap-2">
-<label class="font-label-md text-primary uppercase">Empresa / Planta</label>
-<input class="border border-outline-variant bg-white p-3 focus:ring-2 focus:ring-secondary-container focus:border-secondary-container outline-none" placeholder="Industrias Metalúrgicas S.A." type="text"/>
-</div>
-<div class="flex flex-col gap-2">
-<label class="font-label-md text-primary uppercase">Sistema de Interés</label>
-<select class="border border-outline-variant bg-white p-3 focus:ring-2 focus:ring-secondary-container focus:border-secondary-container outline-none appearance-none">
-<option>Seleccione un sistema...</option>
-<option>Caldera</option>
-<option>Torre de Enfriamiento</option>
-<option>Chiller</option>
-<option>Ósmosis Inversa</option>
-</select>
-</div>
-<button class="bg-primary-container text-white font-headline-md py-4 uppercase tracking-widest hover:bg-primary transition-colors mt-4">
-                                Quiero una Auditoría de Eficiencia
-                            </button>
-</form>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer Component -->
-<footer class="bg-slate-900 border-t border-slate-800">
-<div class="max-w-[1280px] mx-auto px-12 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
-<div class="flex flex-col gap-2">
-<div class="text-lg font-bold text-white font-headline-md">WD CHEMICALS</div>
-<p class="font-['Work_Sans'] text-xs tracking-tight text-slate-400">© 2026 WD CHEMICALS.</p>
-</div>
-<div class="flex gap-8">
-<a class="font-['Work_Sans'] text-xs tracking-tight text-slate-400 hover:text-white transition-colors" href="#">Aviso de Privacidad</a>
-<a class="font-['Work_Sans'] text-xs tracking-tight text-slate-400 hover:text-white transition-colors" href="#">Términos de Servicio</a>
-<a class="font-['Work_Sans'] text-xs tracking-tight text-slate-400 hover:text-white transition-colors" href="#">Certificaciones DC-3</a>
-</div>
-</div>
-</footer>
-<a aria-label="Chat on WhatsApp" class="fixed bottom-8 right-8 z-[100] bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 flex items-center justify-center group" href="https://wa.me/527775318482?text=Estoy%20interesado%20en%20los%20servicios%20de%20WD%20Chemicals." rel="noopener noreferrer" target="_blank">
-<svg class="w-8 h-8" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
-</svg>
-</a>```</body></html>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Muy pronto! Libro a la venta</h1>
+        
+        <!-- Aquí iría tu imagen: Portada.jpg -->
+        <img src="Portada.jpg" alt="Portada del libro: Una estrella junto a la Luna">
+        
+        <div class="cta-section">
+            <h2>Mantente informado</h2>
+            <p>Suscríbete para recibir noticias sobre el lanzamiento.</p>
+            <form>
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirme</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
