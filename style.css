@@ -1,0 +1,31 @@
+/* Configuración de base */
+body {
+    background-color: #20013e;
+    color: #efdbff;
+    scroll-behavior: smooth;
+}
+
+/* Estilos personalizados */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+.ethereal-glow {
+    box-shadow: 0 0 40px -10px rgba(184, 198, 240, 0.15);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Clases para las animaciones de scroll */
+.reveal-hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease-out;
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
