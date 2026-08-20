@@ -247,6 +247,18 @@
 </div>
 </section>
 <!-- END: NewsletterSection -->
+
+<!-- BEGIN: AvisoLegalSection -->
+<section class="py-16 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest border-t border-outline-variant/10" id="privacidad">
+<div class="max-w-4xl mx-auto text-on-surface-variant text-sm space-y-4">
+<h5 class="font-headline-lg text-xl text-on-surface mb-2">Aviso Legal y Política de Privacidad</h5>
+<p><strong>Bitácora del Leviatán</strong> es una editorial independiente dedicada a la promoción y difusión de obra literaria. Los datos de contacto proporcionados a través de nuestro correo electrónico (bitacoraleviatan@gmail.com) son utilizados exclusivamente para la recepción y evaluación de manuscritos o atención a lectores, sin compartir información con terceros.</p>
+<p>Las transacciones comerciales y de venta de libros impresos y digitales son procesadas de manera externa y segura a través de la plataforma de Amazon, bajo sus propias políticas de privacidad y términos de compra.</p>
+<p>Contacto editorial: <a href="mailto:bitacoraleviatan@gmail.com" class="text-primary underline">bitacoraleviatan@gmail.com</a></p>
+</div>
+</section>
+<!-- END: AvisoLegalSection -->
+
 </main>
 <!-- BEGIN: Footer -->
 <footer class="w-full py-12 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest border-t border-outline-variant/10">
@@ -279,7 +291,7 @@
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            entry.target.classList.et?.('is-visible') || entry.target.classList.add('is-visible');
+            entry.target.classList.add('is-visible');
           }
         });
       }, observerOptions);
